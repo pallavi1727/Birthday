@@ -1,0 +1,166 @@
+import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+
+import Background from "../Common/BackgroundGlow";
+import Envelope from "../Letter/Envelope";
+import LetterPaper from "../Letter/LetterPaper";
+
+const BirthdayLetter = ({ onNext }) => {
+  const [opened, setOpened] = useState(false);
+  const [readMore, setReadMore] = useState(false);
+
+  return (
+    <section className="relative h-screen overflow-hidden">
+      <Background />
+
+      <div className="relative z-10 flex h-screen items-center justify-center px-4">
+        {!opened ? (
+          <Envelope onOpen={() => setOpened(true)} />
+        ) : (
+          <LetterPaper>
+            <h1
+              className="text-center text-3xl text-rose-500"
+              style={{ fontFamily: "Great Vibes" }}
+            >
+              Happiest Birthday To My Dear Husband ❤️
+            </h1>
+
+            <div
+              className="mt-8 max-h-[60vh] overflow-y-auto pr-3 text-lg leading-9 text-gray-700"
+              style={{ fontFamily: "Gabriola" }}
+            >
+              <p>
+                <strong>My Dear Husband,</strong>
+                <br />
+                <br />
+                Em cheppali nee gurinchi... Naa life loki oka unexpected person
+                la ochavu. Eppudu asal ninnu odhili undalenantha close aipoyav.
+                Em chesavo thelidhu kani, nee presence lekapothe aa roju asalu
+                complete anipinchadhu.
+                <br />
+                <br />
+                Asalu pelli chupullo just normal ga ocha... "Em undhi le, reject
+                cheddham" ani anukunna. Kani ninnu chusaka ila attract avthanu ani
+                assalu anukole.
+                <br />
+                <br />
+                Okay cheppaka kuda chaala alochincha... "Nenu relationship ki
+                ready ga unnana?" ani. Kani finally intha handsome boy ni miss
+                chesthe malli ilaanti vaadu vasthado radho ani okay cheppesa. 😁
+              </p>
+
+              <AnimatePresence>
+                {readMore && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.6 }}
+                    className="overflow-hidden"
+                  >
+                    <div className="mt-6 space-y-6">
+                      <p>
+                        Chaala anukunna... Insta account undhi kadha... endhuku
+                        message cheyyatledhu ani. Naa account dorakatledhemo ani
+                        profile picture kuda marchesa... aina no use! 😂
+                      </p>
+
+                      <p>
+                        Sare numbers exchange cheskunnaka matladukunnam. Kani naa
+                        feeling entante... pelli ayyaka ne manam ekkuva time spend
+                        chesthunnam. Nijam cheppu... pelli ki mundhu okkasari kuda
+                        video call cheyyali ani anipinchaledha? 🥺
+                      </p>
+
+                      <p>
+                        Pelli tharvatha nunchi nee meedha naa prema inka
+                        ekkuvaga perigindhi. Thank you for coming into my life
+                        and making every day so special.
+                      </p>
+
+                      <p>
+                        Your smile, your love, and your support mean the world
+                        to me. Nuvvu naa husband maathrame kaadhu... naa best
+                        buddy, naa strength, naa happiness, naa peace, naa home.
+                      </p>
+
+                      <p>
+                        Finally... okkati cheppali. Naa life lo nenu teesukunna
+                        best decision nuvvu. Enni birthdays vachina... nenu
+                        ilage nee pakkane undi mana life journey ni complete
+                        cheyyali anukuntunnanu.
+                      </p>
+
+                      <p>
+                        <strong>
+                          Make a promise that you'll be forever with me. 🙋‍♀️🤝🥰
+                        </strong>
+                      </p>
+
+                      <p>
+                        On your special day, I promise to stand by you through
+                        every happiness and every challenge. Nee navvu naa
+                        happiness... Nee baadha naa baadha.
+                      </p>
+
+                      <p>
+                        And one last thing... the most precious gift a husband
+                        can give his partner is his time, and I'm so lucky to
+                        have yours. ❤️
+                      </p>
+
+                      <p>
+                        I am so grateful to have you in my life. You are my
+                        greatest blessing, and I love you more than words can
+                        ever express.
+                      </p>
+
+                      <p>
+                        Happy Birthday once again, my love! ❤️🎂🎈
+                        <br />
+                        Wishing you a day as amazing, wonderful, and special as
+                        you are.
+                      </p>
+
+                      <p className="font-bold">
+                        Thank You For Choosing Me 💚
+                      </p>
+
+                      <p className="font-bold">
+                        I love you today, tomorrow, and forever. ❤️♾️
+                      </p>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            {/* Buttons */}
+            <div className="mt-4 flex flex-wrap justify-center gap-4">
+                
+              <button
+                onClick={() => setReadMore(!readMore)}
+                className="rounded-full bg-gradient-to-r from-pink-500 to-rose-500 px-8 py-3 text-white font-semibold transition duration-300 hover:scale-105"
+              >
+                {readMore ? "Close Letter 💌" : "Continue Reading 📖"}
+              </button>
+
+              {readMore && (
+                <motion.button
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  onClick={onNext}
+                  className="rounded-full bg-gradient-to-r from-purple-500 to-indigo-600 px-8 py-3 text-white font-semibold transition duration-300 hover:scale-105"
+                >
+                  Birthday Surprise 🎂
+                </motion.button>
+              )}
+            </div>
+          </LetterPaper>
+        )}
+      </div>
+    </section>
+  );
+};
+
+export default BirthdayLetter;

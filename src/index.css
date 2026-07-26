@@ -1,0 +1,29 @@
+@import "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap'); */
+
+/*css is add*/
+/* Custom Scrollbar */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255,255,255,.08);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#ec4899,#f43f5e);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fb7185;
+}
+
+*{
+    cursor: url('/heart-cursor.png'), auto;
+}
