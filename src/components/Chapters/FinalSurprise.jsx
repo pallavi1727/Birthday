@@ -7,7 +7,7 @@ import Button from "../Common/Button";
 // import finalPhoto from "../../assets/images/last.png";
 // import birthdayMusic from "../../assets/music/birthday.mp4";
 import Confetti from "react-confetti";
-
+import LoveConfetti from "../Common/LoveConfetti";
 const FinalSurprise = ({ onRestart }) => {
   const audioRef = useRef(null);
   const [playing, setPlaying] = useState(true);
@@ -47,10 +47,11 @@ const FinalSurprise = ({ onRestart }) => {
 
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6">
-        <Confetti
-        recycle={false}
-        numberOfPieces={300}
-      />
+      <>
+        <LoveConfetti />
+
+        
+      </>
 
       <Background />
 
@@ -113,10 +114,10 @@ const FinalSurprise = ({ onRestart }) => {
           style={{ fontFamily: "Great Vibes" }}
         >
           Now You Are My Whole World ❤️
-        </motion.h1> */} 
+        </motion.h1> */}
 
         {/* Message */}
-        
+
 
         {/* Birthday Wish */}
         <motion.h2

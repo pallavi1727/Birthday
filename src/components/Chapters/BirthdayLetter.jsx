@@ -1,28 +1,41 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import Confetti from "react-confetti";
 
 import Background from "../Common/BackgroundGlow";
 import Envelope from "../Letter/Envelope";
 import LetterPaper from "../Letter/LetterPaper";
-import Confetti from "react-confetti";
 
 const BirthdayLetter = ({ onNext }) => {
   const [opened, setOpened] = useState(false);
   const [readMore, setReadMore] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
+
+  useEffect(() => {
+    if (opened) {
+      setShowConfetti(true);
+
+      const timer = setTimeout(() => {
+        setShowConfetti(false);
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [opened]);
 
   return (
     <section className="relative h-screen overflow-hidden">
-      <Confetti
-        width={window.innerWidth}
-        height={window.innerHeight}
-        recycle={false}
-        numberOfPieces={2000}
-        gravity={0.35}
-        wind={0.05}
-        initialVelocityY={25}
-        initialVelocityX={15}
-      />
       <Background />
+
+      {showConfetti && (
+        <Confetti
+          width={window.innerWidth}
+          height={window.innerHeight}
+          recycle={false}
+          numberOfPieces={1800}
+          gravity={0.3}
+        />
+      )}
 
       <div className="relative z-10 flex h-screen items-center justify-center px-4">
         {!opened ? (
@@ -37,7 +50,7 @@ const BirthdayLetter = ({ onNext }) => {
             </h1>
 
             <div
-              className="mt-8 max-h-[60vh] overflow-y-auto pr-3 text-lg leading-9 text-gray-700"
+              className="mt-8 md:max-h-[60vh]  overflow-y-auto pr-3 text-lg leading-9 text-gray-700"
               style={{ fontFamily: "Gabriola" }}
             >
               <p>
@@ -146,9 +159,7 @@ const BirthdayLetter = ({ onNext }) => {
               </AnimatePresence>
             </div>
 
-            {/* Buttons */}
             <div className="mt-4 flex flex-wrap justify-center gap-4">
-
               <button
                 onClick={() => setReadMore(!readMore)}
                 className="rounded-full bg-gradient-to-r from-pink-500 to-rose-500 px-8 py-3 text-white font-semibold transition duration-300 hover:scale-105"
