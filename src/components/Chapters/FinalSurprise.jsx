@@ -48,9 +48,7 @@ const FinalSurprise = ({ onRestart }) => {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6">
       <>
-        <LoveConfetti />
-
-        
+        <LoveConfetti /> 
       </>
 
       <Background />
@@ -80,7 +78,7 @@ const FinalSurprise = ({ onRestart }) => {
             duration: 2,
             repeat: Infinity,
           }}
-          className="mb-8 text-6xl"
+          className="md:mb-8 mb-5 text-6xl"
         >
           ❤️
         </motion.div>
@@ -124,7 +122,7 @@ const FinalSurprise = ({ onRestart }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2 }}
-          className="mt-12 text-5xl text-rose-400"
+          className="md:mt-12 md:text-5xl text-2xl text-rose-400"
           style={{ fontFamily: "Great Vibes" }}
         >
           Happy Birthday
@@ -136,14 +134,14 @@ const FinalSurprise = ({ onRestart }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2.5 }}
-          className="mx-auto mt-10 max-w-2xl text-xl leading-10 text-slate-300"
+          className="mx-auto md:mt-10 max-w-2xl md:text-xl text-md leading-10 text-slate-300"
         >
           If I had the chance to live a thousand lives...
-          <br />
+          
           I'd still search for you.
-          <br />
+          
           I'd still choose you.
-          <br />
+          
           Every single time. ❤️
         </motion.p>
 
@@ -152,7 +150,7 @@ const FinalSurprise = ({ onRestart }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 3 }}
-          className="mt-12"
+          className="md:mt-12"
         >
           <Button onClick={onRestart}>
             Replay Our Story 📖

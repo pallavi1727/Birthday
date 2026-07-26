@@ -26,6 +26,9 @@ const Gallery = ({ onNext }) => {
           <p className="mt-4 text-center text-slate-300 text-lg">
             Every picture tells a story... ❤️
           </p>
+          <p className="mt-4 text-center text-slate-300 text-lg">
+            click and enjoy the story 👇
+          </p>
         </div>
 
         {/* Scrollable Gallery */}

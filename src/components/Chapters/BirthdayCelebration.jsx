@@ -28,7 +28,7 @@ const BirthdayCelebration = ({ onNext }) => {
           initial={{ scale: 0.6, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.5, duration: 1 }}
-          className="mt-6 text-7xl text-rose-400 md:text-8xl"
+          className="md:mt-6 mt-2 text-5xl text-rose-400 md:text-8xl"
           style={{ fontFamily: "Great Vibes" }}
         >
           Happy Birthday
@@ -38,7 +38,7 @@ const BirthdayCelebration = ({ onNext }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
-          className="mt-6 text-4xl text-white"
+          className="mt-6 md:text-4xl text-white text-2xl"
         >
           My Love ❤️
         </motion.h3>
@@ -47,7 +47,7 @@ const BirthdayCelebration = ({ onNext }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2 }}
-          className="mx-auto mt-10 max-w-2xl text-lg leading-8 text-slate-300"
+          className="mx-auto md:mt-10 mt-3 max-w-2xl md:text-lg text-md leading-8 text-slate-300"
         >
           Every birthday reminds me how lucky I am to have you.
           <br />
@@ -63,7 +63,7 @@ const BirthdayCelebration = ({ onNext }) => {
             repeat: Infinity,
             duration: 4,
           }}
-          className="mt-8 text-6xl"
+          className="md:mt-8 mt-4 text-6xl"
         >
           ❤️
         </motion.div>
@@ -73,7 +73,7 @@ const BirthdayCelebration = ({ onNext }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 3 }}
-          className="mt-12"
+          className="md:mt-12 mt-3"
         >
           <Button onClick={onNext}>
             One Last Surprise 🎁

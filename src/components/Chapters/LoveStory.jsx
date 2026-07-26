@@ -16,12 +16,12 @@ const LoveStory = ({ onNext }) => {
   };
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6">
+    <section className="relative flex min-h-screen items-center justify-center px-6">
       <Background />
 
-      <div className="relative z-10 flex w-full max-w-2xl flex-col items-center">
+      <div className="relative z-10 flex w-full md:max-w-2xl flex-col items-center">
         <h1
-          className="mb-8 text-center text-5xl text-white"
+          className="mb-8 text-center md:text-5xl text-2xl text-white"
           style={{ fontFamily: "Great Vibes" }}
         >
           Our Story
@@ -29,7 +29,7 @@ const LoveStory = ({ onNext }) => {
 
         <StoryCard story={storyData[index]} />
 
-        <div className="mt-10">
+        <div className="md:mt-10 mt-5">
           <Button onClick={nextStory}>
             {index === storyData.length - 1
               ? "Continue 🤍"
