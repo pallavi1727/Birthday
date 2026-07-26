@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Background from "../Common/BackgroundGlow";
 import Envelope from "../Letter/Envelope";
 import LetterPaper from "../Letter/LetterPaper";
+import Confetti from "react-confetti";
 
 const BirthdayLetter = ({ onNext }) => {
   const [opened, setOpened] = useState(false);
@@ -11,6 +12,16 @@ const BirthdayLetter = ({ onNext }) => {
 
   return (
     <section className="relative h-screen overflow-hidden">
+      <Confetti
+        width={window.innerWidth}
+        height={window.innerHeight}
+        recycle={false}
+        numberOfPieces={2000}
+        gravity={0.35}
+        wind={0.05}
+        initialVelocityY={25}
+        initialVelocityX={15}
+      />
       <Background />
 
       <div className="relative z-10 flex h-screen items-center justify-center px-4">
@@ -137,7 +148,7 @@ const BirthdayLetter = ({ onNext }) => {
 
             {/* Buttons */}
             <div className="mt-4 flex flex-wrap justify-center gap-4">
-                
+
               <button
                 onClick={() => setReadMore(!readMore)}
                 className="rounded-full bg-gradient-to-r from-pink-500 to-rose-500 px-8 py-3 text-white font-semibold transition duration-300 hover:scale-105"
