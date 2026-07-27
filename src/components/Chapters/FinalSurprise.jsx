@@ -55,7 +55,7 @@ const FinalSurprise = ({ onRestart }) => {
 
       {/* Audio */}
       <audio ref={audioRef} loop>
-        <source src={'https://res.cloudinary.com/ddc8n2veu/video/upload/v1784990358/birthday_apak63.mp4'} type="audio/mpeg" />
+        <source src={'https://res.cloudinary.com/ddc8n2veu/video/upload/v1785082728/Insta_Saver__bhoomi_official_27_audio__%EF%B8%8F_%EF%B8%8F_%EF%B8%8F_jf5u6p.mp3'} type="audio/mpeg" />
       </audio>
 
       {/* Music Button */}
@@ -85,7 +85,7 @@ const FinalSurprise = ({ onRestart }) => {
 
         {/* Photo */}
         <motion.img
-          src={'https://res.cloudinary.com/ddc8n2veu/image/upload/v1784992077/last_hm6oxt.png'}
+          src={'https://res.cloudinary.com/ddc8n2veu/image/upload/v1785133178/Screenshot_2026-07-27_114851_vnt01d.png'}
           alt="Together Forever"
           initial={{ opacity: 0, scale: 0.7 }}
           animate={{ opacity: 1, scale: 1 }}

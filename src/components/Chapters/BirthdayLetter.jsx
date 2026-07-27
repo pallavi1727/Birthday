@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Confetti from "react-confetti";
-
+import { useState, useEffect, useRef } from "react";
 import Background from "../Common/BackgroundGlow";
 import Envelope from "../Letter/Envelope";
 import LetterPaper from "../Letter/LetterPaper";
@@ -10,6 +10,37 @@ const BirthdayLetter = ({ onNext }) => {
   const [opened, setOpened] = useState(false);
   const [readMore, setReadMore] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
+  const audioRef = useRef(null);
+  const [playing, setPlaying] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (audioRef.current) {
+        audioRef.current.volume = 0.3;
+
+        audioRef.current.play().catch((err) => {
+          console.log("Autoplay blocked:", err);
+        });
+      }
+    }, 1200);
+
+    return () => {
+      clearTimeout(timer);
+
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+      }
+    };
+  }, []);
+  useEffect(() => {
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+      }
+    };
+  }, []);
 
   useEffect(() => {
     if (opened) {
@@ -26,6 +57,12 @@ const BirthdayLetter = ({ onNext }) => {
   return (
     <section className="relative h-screen overflow-hidden">
       <Background />
+      <audio ref={audioRef} loop>
+        <source
+          src="https://res.cloudinary.com/ddc8n2veu/video/upload/v1785136481/InShot_20260727_124125678_wewd1n.mp4"
+          type="audio/mpeg"
+        />
+      </audio>
 
       {showConfetti && (
         <Confetti
@@ -60,7 +97,7 @@ const BirthdayLetter = ({ onNext }) => {
                 Em cheppali nee gurinchi... Naa life loki oka unexpected person
                 la ochavu. Eppudu asal ninnu odhili undalenantha close aipoyav.
                 Em chesavo thelidhu kani, nee presence lekapothe aa roju asalu
-                complete anipinchadhu.
+                complete anipinchatledhu.
                 <br />
                 <br />
                 Asalu pelli chupullo just normal ga ocha... "Em undhi le, reject
@@ -97,9 +134,28 @@ const BirthdayLetter = ({ onNext }) => {
                       </p>
 
                       <p>
+                        Mana pelli fix ina dhaggara nunchi roju insta lo oka quote osthundhi, 
+                        <strong>"Believe in god because he gives late but always gives but always gives better"</strong> ani, entha bagundho kadha......☺️
+                        Ante devudu manam edharam kalvali ani gattiga anukunnadu🥹😘
+                      </p>
+
+                      <p>
                         Pelli tharvatha nunchi nee meedha naa prema inka
                         ekkuvaga perigindhi. Thank you for coming into my life
                         and making every day so special.
+                      </p>
+
+                      <p>
+                        Urike Antav kadha nannu endhuku cheskunnanu anipinsthundha, oka manchi govt employee ni cheskunte bagundu anipisthundha ani,
+                        Ala endhuku anipisthadhi abba, nenu ninnu ishtam thone kadha pelli chesukundi, edho ishtam lekunda cheskunnatu chesthunnav...
+                        Plz inkosari alanti pichi pichi alochanalu manesi, peacefull ga positive thoughts tho undu. Be positive Abba😍🙂...
+                        <strong>I Love You More Then Everything. Ani Neku eppudu ardham ithadhooo🤦‍♀️🥹❤️😘</strong>
+                      </p>
+
+                      <p>
+                        Naku properties em avsaram ledhu nv na pakkana eppudu ela unte chaalu, Naku adhe veeyi kotla property ❤️
+                        Na alochana motham nve
+                        Mrng levagane modhati alochana, ngt ithe chivari alochana nve❤️
                       </p>
 
                       <p>
