@@ -40,7 +40,7 @@ export const memories = [
   {
     id: 6,
     image: "https://res.cloudinary.com/ddc8n2veu/image/upload/v1784996404/Screenshot_2026-07-25_214753_pmgnpe.png",
-    music: "https://res.cloudinary.com/ddc8n2veu/video/upload/v1784990365/song6_ebbms7.mp4",
+    music: "https://res.cloudinary.com/ddc8n2veu/video/upload/v1785140510/Yede_YededeyTelugu_lyrical_songs_rdaead.mp3",
     title: "The Beginning of Us 💙",
     description: "A Dream Walking Towards Me",
   },

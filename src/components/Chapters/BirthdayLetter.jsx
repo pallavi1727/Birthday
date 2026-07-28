@@ -87,28 +87,49 @@ const BirthdayLetter = ({ onNext }) => {
             </h1>
 
             <div
-              className="mt-8 md:max-h-[60vh]  overflow-y-auto pr-3 text-lg leading-9 text-gray-700"
+              className="mt-8 md:max-h-[60vh]  overflow-y-auto pr-3 text-lg leading-7 text-gray-700"
               style={{ fontFamily: "Gabriola" }}
             >
               <p>
                 <strong>My Dear Husband,</strong>
                 <br />
-                <br />
+
                 Em cheppali nee gurinchi... Naa life loki oka unexpected person
                 la ochavu. Eppudu asal ninnu odhili undalenantha close aipoyav.
                 Em chesavo thelidhu kani, nee presence lekapothe aa roju asalu
                 complete anipinchatledhu.
                 <br />
-                <br />
+
                 Asalu pelli chupullo just normal ga ocha... "Em undhi le, reject
                 cheddham" ani anukunna. Kani ninnu chusaka ila attract avthanu ani
                 assalu anukole.
                 <br />
-                <br />
+
                 Okay cheppaka kuda chaala alochincha... "Nenu relationship ki
                 ready ga unnana?" ani. Kani finally intha handsome boy ni miss
                 chesthe malli ilaanti vaadu vasthado radho ani okay cheppesa. 😁
               </p>
+              <br />
+
+              <p>
+                Chaala anukunna... Insta account undhi kadha... endhuku
+                message cheyyatledhu ani. Naa account dorakatledhemo ani
+                profile picture kuda marchesa... aina no use! 😂
+              </p>
+              <br />
+
+              <p>
+                Sare numbers exchange cheskunnaka matladukunnam. Kani naa
+                feeling entante... pelli ayyaka ne manam ekkuva time spend
+                chesthunnam. Nijam cheppu... pelli ki mundhu okkasari kuda
+                video call cheyyali ani anipinchaledha? 🥺
+              </p> <br />
+              <p>
+                Mana pelli fix ina dhaggara nunchi roju insta lo oka quote osthundhi,
+                <strong>"Believe in god because he gives late but always gives but always gives better"</strong> ani, entha bagundho kadha......☺️
+                Ante devudu manam edharam kalvali ani gattiga anukunnadu🥹😘
+              </p> <br />
+
 
               <AnimatePresence>
                 {readMore && (
@@ -119,31 +140,10 @@ const BirthdayLetter = ({ onNext }) => {
                     transition={{ duration: 0.6 }}
                     className="overflow-hidden"
                   >
-                    <div className="mt-6 space-y-6">
-                      <p>
-                        Chaala anukunna... Insta account undhi kadha... endhuku
-                        message cheyyatledhu ani. Naa account dorakatledhemo ani
-                        profile picture kuda marchesa... aina no use! 😂
-                      </p>
+                    <div className="mt-3 space-y-7">
 
-                      <p>
-                        Sare numbers exchange cheskunnaka matladukunnam. Kani naa
-                        feeling entante... pelli ayyaka ne manam ekkuva time spend
-                        chesthunnam. Nijam cheppu... pelli ki mundhu okkasari kuda
-                        video call cheyyali ani anipinchaledha? 🥺
-                      </p>
 
-                      <p>
-                        Mana pelli fix ina dhaggara nunchi roju insta lo oka quote osthundhi, 
-                        <strong>"Believe in god because he gives late but always gives but always gives better"</strong> ani, entha bagundho kadha......☺️
-                        Ante devudu manam edharam kalvali ani gattiga anukunnadu🥹😘
-                      </p>
 
-                      <p>
-                        Pelli tharvatha nunchi nee meedha naa prema inka
-                        ekkuvaga perigindhi. Thank you for coming into my life
-                        and making every day so special.
-                      </p>
 
                       <p>
                         Urike Antav kadha nannu endhuku cheskunnanu anipinsthundha, oka manchi govt employee ni cheskunte bagundu anipisthundha ani,
@@ -177,6 +177,22 @@ const BirthdayLetter = ({ onNext }) => {
                         </strong>
                       </p>
 
+                      <p>
+                        Nv eppudu nathone untadali ani korukunta
+                        Endhante naku nannu thappa vere vallatho nv close ga unte nachadhu.
+                        I feel jealous, Naku possessiveness ekkuva ma frds vere vallatho matladuthene nachadhu,
+                        alantidhi nv na life partner inka ekkuva ga feel itha. So chusko mari...
+                      </p>
+
+                      <p>
+                        Nv call chesthe oka happiness nv msg chesthe edho theliyani oka feel
+                        Ento nv nakosam a chinna pani chesina naku adhi biggest Happiness lane anipisthadhi 🥰👩‍❤️‍💋‍👨
+                      </p>
+
+                      <p>
+                        Nv navvuthe chaala baguntav, always keep smiling 😊,
+                        I need your warm, I want to lay on your shoulder, and say "I love you 😘" 💘💋
+                      </p>
                       <p>
                         On your special day, I promise to stand by you through
                         every happiness and every challenge. Nee navvu naa
