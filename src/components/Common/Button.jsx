@@ -1,30 +1,26 @@
-import { motion } from "framer-motion";
-
-const Button = ({ children, onClick }) => {
+const Button = ({ children, onClick, type = "button" }) => {
   return (
-    <motion.button
-      whileHover={{
-        scale: 1.05,
-        boxShadow: "0 0 35px rgba(236,72,153,.45)",
-      }}
-      whileTap={{ scale: 0.95 }}
-      transition={{ duration: 0.2 }}
+    <button
+      type={type}
       onClick={onClick}
       className="
         rounded-full
         bg-gradient-to-r
         from-pink-500
         to-rose-500
-        px-8
-        py-4
-        text-white
+        px-7
+        py-3
         font-semibold
-        text-lg
+        text-white
         shadow-lg
+        transition-all
+        duration-300
+        hover:scale-105
+        hover:shadow-pink-500/40
       "
     >
       {children}
-    </motion.button>
+    </button>
   );
 };
 
