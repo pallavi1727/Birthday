@@ -6,7 +6,7 @@ import Envelope from "../Letter/Envelope";
 import LetterPaper from "../Letter/LetterPaper";
 import Button from "../Common/Button";
 
-const SECRET_PASSWORD = "HariPallavi@143";
+const SECRET_PASSWORD = "HariPallavi@2227";
 
 const BirthdayLetter = ({ onNext }) => {
   const [showPassword, setShowPassword] = useState(false);
