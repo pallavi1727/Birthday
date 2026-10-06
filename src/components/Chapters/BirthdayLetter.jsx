@@ -533,6 +533,13 @@ const BirthdayLetter = ({ onNext }) => {
                       </p>
 
                       <br />
+                      <p> Neku nenu Birthday gift pelli tharvatha ashadam lone e matter antha rasanu. Kani ela express chesthe anna marthav ani rasthunna.
+If I'm wrong, forgive me. If I'm correct change your behaviour. 
+Andharitho unnaru natho undoddhu ani anukunna, nijam gaane andharitho unnatu natho undattle. Naki nenu anukunnadi okati nv chesedhi okati, nannu andharikante special ga treat cheiyali anukunna kani nv asal naku correct output esthalev.
+Oka stranger la anipisthundhi ne life lo nenu. Naku ne behaviour ala ne anipisthundhi. Hyd lo ithe mari ekkuva. Ega ne estam I'm your wife or stranger adhi neke theliyali. Neku chaala EGO undhi adhi pakkaki petti alochinchu neku nenu cheppedi ardham avthadhi. Nv entha chesina end of the day nv natho oka mata manchiga matladina. Entha varaki chepinavi anni marchipoye, karigipotha. Nv ante Naku antha estam.
+                      </p>
+
+                      <br/>
 
                       <p>
                         I am so grateful to have you in my life.
