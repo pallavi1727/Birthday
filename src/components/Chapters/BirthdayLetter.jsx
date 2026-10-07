@@ -540,6 +540,11 @@ const BirthdayLetter = ({ onNext }) => {
                         nene thappuga ardham cheskunnanemo waste ga rasthunna ani. ala anukunna nxt day ne malla same repeat chesthav. 
                         <strong>Asal natho neku Problem anto cheppu. dhanni batti nenu change avtha kadha.</strong> 
                         <br/>
+                        Naku okosari em anipisthadhi ante ne behaviour chusi, just for housewife, intlo unchadanike nannu pelli cheskunnav ani, Anni alochanallo na 
+                        brain and na heart entha heavy avthundho neku ardham ithaledhu. Andhari mundhu natho manchiga matladadaniki neku problem ento nak ardham kadhu,
+                        em anukuntaro ani feel avthava. Manam happy ga unnam ani vallu feel ithene kadha vallu kuda Happy ga untaru. Nenu Happy unna ani nv anukuntunnava? Asal 
+                        netho nenu Happy ga unnana... em Ardham ithale, confusion lo unna. My heart is too heavy, ne answer batti na future decide ithadhi. 
+                        <br/>
                         birthday roju edhi antha chadvinchi badha pettali ani ledhu kani na bhadha kuda neku theliyali ga.
                         nenu em feel avthunnano neku teliyali ga. <strong>Ne answer naku chaala importent.</strong>
                         <br/>
