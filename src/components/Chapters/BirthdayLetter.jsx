@@ -533,10 +533,24 @@ const BirthdayLetter = ({ onNext }) => {
                       </p>
 
                       <br />
-                      <p> Neku nenu Birthday gift pelli tharvatha ashadam lone e matter antha rasanu. Kani ela express chesthe anna marthav ani rasthunna.
-If I'm wrong, forgive me. If I'm correct change your behaviour. 
-Andharitho unnatu natho undoddhu ani anukunna, nijam gaane andharitho unnatu natho undattle. Naki nenu anukunnadi okati nv chesedhi okati, nannu andharikante special ga treat cheiyali anukunna kani nv asal naku correct output esthalev.
-Oka stranger la anipisthundhi ne life lo nenu. Naku ne behaviour ala ne anipisthundhi. Hyd lo ithe mari ekkuva. Ega ne estam I'm your wife or stranger adhi neke theliyali. Neku chaala EGO undhi adhi pakkaki petti alochinchu neku nenu cheppedi ardham avthadhi. Nv entha chesina end of the day nv natho oka mata manchiga matladina. Entha varaki chepinavi anni marchipoye, karigipotha. Nv ante Naku antha estam.
+                      <p>Neku nenu edhi ashadam ki vellinappude create chesanu. Kani, hyd ki ochakake ardham iendhi nenu ne life lo entha importent ani.
+                        asal em theliyattle naku. Nijanga nenu ne life lo importent a kadha ani, nenu em adigina cheiyav, adigina kuda baitiki thiskapov, kani
+                        minni ni matram aduguthav. Ante nenu em ardham cheskovali, natho ravadam estam ledha ledha asal nene estam ledha. edho okati cheppu, 
+                        untav evening ithe manchigane untav, day time lo em ithadho naku ardham kadhu. edhi rasinaka nv natho kodhisepu manchiga unna, naku anipisthadhi
+                        nene thappuga ardham cheskunnanemo waste ga rasthunna ani. ala anukunna nxt day ne malla same repeat chesthav. 
+                        <strong>Asal natho neku Problem anto cheppu. dhanni batti nenu change avtha kadha.</strong> 
+                        <br/>
+                        birthday roju edhi antha chadvinchi badha pettali ani ledhu kani na bhadha kuda neku theliyali ga.
+                        nenu em feel avthunnano neku teliyali ga. <strong>Ne answer naku chaala importent.</strong>
+                        <br/>
+                        <strong>Enthe nenu elane unta nv kuda adjust avvali antava adhi kuda cheppu no problem. 
+                          edhi chadhivi EGO ki thiskoni, na wifi ela antadha nannu ani matladakunda matram undaku, enno sarlu netho godava padali ani untadhi 
+                          kani navalla kadhu, godava padali ani anukunna prathi sari evariki theliyakunda padukoni adustha.
+                          naku matallo express chiyadaniki radhu so ela anna cheppe change undhi ani chepthunna.<br/>
+                          <mark>Entha chesina nv em anna,  At The End Of The Day I Love You Forever And Ever❤️</mark>
+                        </strong>
+
+
                       </p>
 
                       <br/>
