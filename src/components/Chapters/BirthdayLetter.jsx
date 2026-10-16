@@ -525,11 +525,11 @@ const BirthdayLetter = ({ onNext }) => {
 
                       <br />
 
-                      <p>
+                      <p><del>
                         And one last thing...
                         the most precious gift a husband can give his
                         partner is his time, and I'm so lucky to have yours.
-                        ❤️
+                        ❤️</del>
                       </p>
 
                       <br />
